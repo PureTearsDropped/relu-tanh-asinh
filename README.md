@@ -1,7 +1,8 @@
-# fg-net
+# relu-tanh-asinh
 
 A residual layer built from a **conjugate pair** — a saturating neuron `f` and a
-decoder `g` that is deliberately *not* its inverse:
+decoder `g` that is deliberately *not* its inverse. Both are ReLU above zero;
+below it, `f` uses `tanh` and `g` uses `asinh`:
 
 $$h \leftarrow h + d\,\cdot\,f_{a,b}\big(C\,g_{A,B}(h)\big)$$
 
@@ -51,7 +52,7 @@ What did survive is more useful than the construction itself:
 
 | | |
 |---|---|
-|[`fg_net.py`](fg_net.py)|reference implementation (~120 lines, PyTorch)|
+|[`fg_net.py`](fg_net.py)|reference implementation (~120 lines, PyTorch). The docs call the construction the *f–g* layer; the repository is named after its three ingredients|
 |[`SPEC.md`](SPEC.md)|construction: definitions, derivatives, normalisation, quantisation, initialisation, diagnostics|
 |[`RESULTS.md`](RESULTS.md)|measurements, including the two retracted conclusions and why|
 |[`bench.py`](bench.py)|the benchmark, with all baselines|
