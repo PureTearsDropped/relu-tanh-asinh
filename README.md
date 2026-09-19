@@ -1,5 +1,8 @@
 # relu-tanh-asinh
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22847921.svg)](https://doi.org/10.5281/zenodo.22847921)
+[![License: 0BSD](https://img.shields.io/badge/License-0BSD-blue.svg)](LICENSE)
+
 A residual layer built from a **conjugate pair** — a saturating neuron `f` and a
 decoder `g` that is deliberately *not* its inverse. Both are ReLU above zero;
 below it, `f` uses `tanh` and `g` uses `asinh`:
@@ -75,6 +78,20 @@ Run the diagnostics in SPEC.md section 8. The short version: measure a **linear
 baseline**, a **one-nonlinearity baseline**, and an **ablation with the interior
 zeroed**, on every new task, before comparing anything. A benchmark that any of
 those three can solve is not measuring what you think it is.
+
+## Citing
+
+```bibtex
+@software{relu_tanh_asinh,
+  author  = {PureTearsDropped},
+  title   = {relu-tanh-asinh: a conjugate f/g residual layer},
+  year    = {2026},
+  doi     = {10.5281/zenodo.22847921},
+  url     = {https://github.com/PureTearsDropped/relu-tanh-asinh}
+}
+```
+
+The DOI above always resolves to the latest version.
 
 ## Licence
 
