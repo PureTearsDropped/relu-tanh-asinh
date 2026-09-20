@@ -79,6 +79,16 @@ baseline**, a **one-nonlinearity baseline**, and an **ablation with the interior
 zeroed**, on every new task, before comparing anything. A benchmark that any of
 those three can solve is not measuring what you think it is.
 
+## Related
+
+The same $f$ and $g$, applied as a **product** instead of in series —
+$f(W_g h)\odot g(W_u h)$ — is a different story:
+[dual-nonlinear-glu](https://github.com/PureTearsDropped/dual-nonlinear-glu)
+([10.5281/zenodo.22851806](https://doi.org/10.5281/zenodo.22851806)).
+The series composition here loses to SwiGLU; the product beats it, and the
+measurement isolates *why*: most of the effect is making the value branch
+nonlinear at all, not the particular pair.
+
 ## Citing
 
 ```bibtex
