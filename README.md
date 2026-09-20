@@ -1,6 +1,6 @@
 # relu-tanh-asinh
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22847921.svg)](https://doi.org/10.5281/zenodo.22847921)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22847920.svg)](https://doi.org/10.5281/zenodo.22847920)
 [![License: 0BSD](https://img.shields.io/badge/License-0BSD-blue.svg)](LICENSE)
 
 A residual layer built from a **conjugate pair** — a saturating neuron `f` and a
@@ -96,7 +96,7 @@ nonlinear at all, not the particular pair.
   author  = {PureTearsDropped},
   title   = {relu-tanh-asinh: a conjugate f/g residual layer},
   year    = {2026},
-  doi     = {10.5281/zenodo.22847921},
+  doi     = {10.5281/zenodo.22847920},
   url     = {https://github.com/PureTearsDropped/relu-tanh-asinh}
 }
 ```

@@ -6,7 +6,7 @@ authors:
   - alias: PureTearsDropped
 repository-code: "https://github.com/PureTearsDropped/relu-tanh-asinh"
 license: 0BSD
-doi: 10.5281/zenodo.22847921
+doi: 10.5281/zenodo.22847920
 abstract: >-
   A residual layer built from a conjugate pair: a saturating neuron f (ReLU
   above zero, tanh below) and a decoder g (ReLU above, asinh below) that is
